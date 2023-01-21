@@ -25,10 +25,6 @@ import datetime
 import mysql.connector
 import sqlalchemy
 
-import sqlite3 as lite
-
-
-
 # Модули данных для фотографий
 import mod
 
@@ -62,13 +58,6 @@ manager = Manager(app)
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from database_setup import GBase, GBook
-
-username = data_log.username
-password_db = data_log.password_db
-host = data_log.host
-db_name = data_log.db_name
-
-
 
 
 # Cтраница отображения записей из БД GBmessageTMP
