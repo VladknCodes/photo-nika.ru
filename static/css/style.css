@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.title {
+    max-width: 946px;
+    margin: 0 auto;
+}
+
+#before-load {
+    position: fixed;
+    /*фиксированное положение блока*/
+    left: 0;
+    /*положение элемента слева*/
+    top: 0;
+    /*положение элемента сверху*/
+    right: 0;
+    /*положение элемента справа*/
+    bottom: 0;
+    /*положение элемента снизу*/
+    background: #fff;
+    /*цвет заднего фона блока*/
+    z-index: 1001;
+    /*располагаем его над всеми элементами на странице*/
+}
+
+#before-load i {
+    font-size: 100px;
+    color: #6e6f7d;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -70px 0 0 -70px;
+}
+
+.bottom-texts {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #6e6f7d;
+    text-align: center;
+    /* background: #8FBC8F; */
+    box-sizing: border-box;
+    padding: 15px;
+    clear: left;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container_cont {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #6e6f7d;
+}
+
+
+
+.container_condit {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		position: relative;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		color: #6e6f7d;
+		box-sizing: border-box;
+		padding: 10px;
+	}
+	
+	
+.container_form {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+		position: relative;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 17px;
+		color: #6e6f7d;
+		box-sizing: border-box;
+		padding: 10px;
+	}
+
+
+.breakpoint1 {
+    /* Одна колонка для смартфонов - Вертикальные */
+    max-width: 100%;
+    display: inline-block;
+}
+
+.breakpoint2 {
+    /* Одна колонка для смартфонов - Горизонтальные */
+    max-width: 100%;
+    display: inline-block;
+}
+
+.block1 {
+    width: 100%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+    clear: left;
+}
+
+.block2 {
+    width: 100%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+}
+
+.cond_block1 {
+    /* Одна колонка для смартфонов - Фото */
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background: #FFA07A; */
+}
+
+.cond_block2 {
+    /* Одна колонка для смартфонов - Текст */
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background: #FFEFD5; */
+}
+
+.cond_block3 {
+    /* Одна колонка для смартфонов - Фото */
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    /* background: #FFA07A; */
+}
+
+
+
+
+.gal_block1 {
+    /* Одна колонка для смартфонов - Текст */
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    /* background: #FFEFD5; */
+}
+
+.gal_block2 {
+    /* Одна колонка для смартфонов - Фото */
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+    /* background: #FFA07A; */
+}
+
+
+.gal_text {
+    box-sizing: border-box;
+    padding: 5px;
+    /* background: #FFA07A; */
+}
+
+
+
+
+
+
+
+
+@media (min-width: 542px) {
+    /* Для больших экранов */
+    .breakpoint1 {
+        max-width: 31.42%;
+    }
+    .breakpoint2 {
+        max-width: 48.565%;
+    }
+    .block1 {
+        width: 2.87%;
+        padding-bottom: 1%;
+        margin: 0 auto;
+        clear: none;
+        float: left;
+    }
+    .block2 {
+        width: 100%;
+        padding-bottom: 2%;
+        margin: 0 auto;
+    }
+    
+    .cond_block1 {
+        width: 50%;
+        padding-bottom: 1%;
+        margin: 0 auto;
+        float: left;
+        display: block;
+        box-sizing: border-box;
+        padding: 10px;
+        /* background: #FFA07A; */
+    }
+    .cond_block2 {
+        width: 50%;
+        margin: 0 auto;
+        clear: none;
+        text-align: justify;
+        box-sizing: border-box;
+        padding: 10px;
+        /* background: #FFEFD5; */
+    }
+    .cond_block3 {
+        width: 50%;
+        margin: 0 auto;
+        clear: none;
+        display: none;
+        box-sizing: border-box;
+        padding: 10px;
+        /* background: #FFA07A; */
+    }
+    
+    
+    
+    .gal_block1 {
+        width: 50%;
+        margin: 0 auto;
+        float: left;
+        box-sizing: border-box;
+        padding-left: 0px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        
+        
+        text-align: center;
+        font-size: 15px;
+        /* background: #FFA07A; */
+    }
+   
+   
+    .gal_block2 {
+        width: 50%;
+        margin: 0 auto;
+        clear: none;
+        box-sizing: border-box;
+        padding-right: 0px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        
+        text-align: center;
+        font-size: 15px;
+        /* background: #FFEFD5; */
+    }
+    
+    
+    
+}
+
+
+/* Стиль для кнопки прокрутки вверх */
+.scrollup{
+	width:40px;
+	height:40px;
+	opacity:0.3;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	display:none;
+	text-indent:-9999px;
+	background: url('/static/images/icon_top.png') no-repeat;
+}
+
+
+
+/* Стили для формы отзова */
+
+input[type=text]
+{
+width: 90%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 15px;
+font-family: "Tahoma";
+}
+
+
+input[type=password]
+{
+width: 90%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 15px;
+font-family: "Tahoma";
+}
+
+
+textarea
+{
+width: 90%;
+height:200px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+font-size: 15px;
+font-family: "Tahoma";
+}
+
+
+input[type=submit]
+{
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 15px;
+font-family: "Tahoma";
+}
+
+
+
+/* Стили для формы отзова - вывод сообщений */
+
+.text_error {
+    color: #B22222;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.text_message_sent {
+    color: #4682B4;
+    font-style: italic;
+    font-size: 15px;
+    
+}
