@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/x-icon" rel="shortcut icon" href="/static/images/icon-photo.ico" />
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style_menu.css">
+    <title>Фотограф Ника Сладкая - {{ title }}</title>
+    
+    
+    <script type="text/javascript" src="/static/js/fancybox/jquery-1.4.3.min.js"></script>
+    
+    <script>
+        var jq13 = jQuery;
+    </script>
+    
+    
+    <script type="text/javascript" src="/static/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="/static/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+
+
+    <!-- Скрипт Слайдера -->
+    <script type="text/javascript" src="/static/js/slider.js"></script>
+
+    
+    <!-- Скрипт Прокрутка наверх -->
+    <script type="text/javascript" src="/static/js/scrollup.js"></script>
+
+
+    <!-- Скрипт мобильного меню -->
+    <script type="text/javascript" src="/static/js/mobmenu.js"></script>
+    
+    
+
+</head>
+
+
+<body background="/static/images/background.png">
+
+
+<div class="title">
+    <a href="/"><img src="/static/images/Title-Cvet.png"></a>
+</div>
+
+
+<!-- Мобильное меню -->
+{% include 'mobmenu.html' %}
+<!-- End Мобильное меню -->
+
+
+<!-- Меню для PC -->
+{% include 'menupc.html' %}
+<!-- End Меню для PC -->
+
+
+
+
+<!-- Контент -->
+<!-- Контент -->
+
+{% block content %}
+{% endblock %}
+
+<!-- End Контент -->
+<!-- End Контент -->
+
+
+
+<!-- Подпись -->
+{% include 'inscription.html' %}
+<!-- End Подпись -->
+
+
+<!-- Загрузка JQquery 3.3.1 для мобильного меню  -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- Прокрутка наверх -->
+<a href="#" class="scrollup">Наверх</a>
+
+
+</body>
+
+</html>

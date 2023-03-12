@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<div class="container_form">
+<center>
+
+{% for category, message in get_flashed_messages(with_categories=true) %}
+    <p class="{{ category }} text_message_sent">{{ message }}</p>
+{% endfor %}
+
+<form action="" method="post">
+
+    {{ form.csrf_token() }}
+
+    {% for field in form if field.name != "csrf_token" %}
+	<label>{{ field }}</label><br>
+	<label class="text_error">
+	    {% for error in field.errors %}
+		{{ error }}
+	    {% endfor %}
+	</label><br>
+	{% endfor %}
+
+</form>
+
+</center>
+</div>
+
+
+
+<div class="container_condit">
+
+       
+{% for record in records %}
+
+
+    <!-- Message -->
+    <div>
+        <div><b>{{ record[1] }}</b></div>
+        <div style="font-size: 14px"><i>{{ record[2] }}</i></div>
+        <div>{{ record[3] }}</div>
+    </div><br>
+    <!-- End of message -->
+
+
+{% endfor %} 
+        
+        
+</div>
+
+{% endblock %}

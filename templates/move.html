@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+<div class="container_condit">
+
+<center>
+
+        <div>Are you sure you want to move message:</div><br>
+        
+        <div>"{{record.Message}}" ?</div><br>
+        
+        <form action="#" method='post'>
+          <button type="submit">Move</button>
+        </form>
+        
+        <a href='{{url_for('login')}}'>
+          <button>Cancel</button>
+        </a>
+        
+</center>
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+<html>
+<body>
+   <h1>Guest book</h1>
+
+       {% for record in records %}
+       
+        <div>{{record.id}}</div>
+        
+        <div>{{record.name}}</div>
+        
+        <div>{{record.DateMes}}</div>
+        
+        <div>{{record.Message}}</div>
+       
+       {% endfor %}
+       
+</body>
+</html>

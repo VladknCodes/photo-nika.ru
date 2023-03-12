@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+{% if session.login %}
+
+        <!-- Блок с регистрацией -->
+        
+        <div class="container_condit">
+        
+               
+                <div><center>You are registered. <a href="/logout/">Logout</a></center></div>
+                <br>
+                
+                {% for record in records %}
+                    <table border="1" cellpadding="5" cellspacing="0" bordercolor="grey" width="100%">
+                        <tr><td colspan="2">{{record.id}}</td></tr>
+                        <tr><td colspan="2">{{record.name}}</td></tr>
+                        <tr><td colspan="2">{{record.DateMes}}</td></tr>
+                        <tr><td colspan="2">{{record.Message}}</td></tr>
+                        <tr bgcolor="LightGray">
+                            <td><a href="{{url_for('moverec', rec_id = record.id )}}">Переместить запись</a></td>
+                            <td><a href="{{url_for('deleterec', rec_id = record.id )}}">Удалить запись</a></td>
+                        </tr>
+                    
+
+                    
+                    </table>
+                    <br>
+                    <br>
+                {% endfor %}
+                
+
+
+        </div>
+        
+        <!-- Блок с регистрацией -->
+
+
+{% else %}
+
+        <!-- Форма регистрации -->
+        
+        <div class="container_form">
+                <center>
+                
+                {% for category, message in get_flashed_messages(with_categories=true) %}
+                    <p class="{{ category }} text_error">{{ message }}</p>
+                {% endfor %}
+                
+                <form action="" method="post">
+                
+                    {{ form.csrf_token() }}
+                
+                    {% for field in form if field.name != "csrf_token" %}
+                	<label>{{ field }}</label><br>
+                	<label class="text_error">
+                	    {% for error in field.errors %}
+                		{{ error }}
+                	    {% endfor %}
+                	</label><br>
+                	{% endfor %}
+                
+                </form>
+                
+                </center>
+        </div>
+        
+        <!-- Форма регистрации -->
+
+
+
+{% endif %}
+
+
+{% endblock %}
