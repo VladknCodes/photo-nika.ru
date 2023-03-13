@@ -60,7 +60,7 @@ from sqlalchemy.orm import sessionmaker
 from database_setup import GBase, GBook
 
 
-# Cтраница отображения записей из БД GBmessageTMP
+# Страница отображения записей из БД GBmessageTMP
 
 @app.route('/records/')
 def showRecords():
@@ -171,7 +171,7 @@ def contacts():
 @app.route('/gb/', methods=['get', 'post'])
 def gb():
 
-# Чтенеи данных из таблицы GBmessageMain - Начало
+# Чтение данных из таблицы GBmessageMain - Начало
 
     mydb = mysql.connector.connect(
     host = data_log.host,
@@ -195,7 +195,7 @@ def gb():
     mycursor.close()
     mydb.close()
     
-# Чтенеи данных из таблицы GBmessageMain - Конец
+# Чтение данных из таблицы GBmessageMain - Конец
 
 
 
